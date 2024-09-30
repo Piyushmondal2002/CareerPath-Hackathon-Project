@@ -35,7 +35,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap" rel="stylesheet">
     
-
+    <!-- chatbot style-->
+    <link rel="stylesheet" href="css/chatbot.css"> 
 </head>
 
 <body>
@@ -167,6 +168,25 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
+
+     <!-- Chat Icon -->
+     <div id="chat-icon">
+        <img src="img/chat-bot.png" alt="Chatbot Icon" />
+        <span class="hover-message" id="message-1" style="display: none;">I can help you! 😊</span>
+        <span class="hover-message" id="message-2" style="display: none;">Want some help? 👀</span>
+    </div>
+    
+
+<!-- Chat Box -->
+<div id="chat-box" class="chat-box-hidden">
+    <div id="chat-window">
+        <div id="messages"></div>
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="js/chatbot.js"> </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
